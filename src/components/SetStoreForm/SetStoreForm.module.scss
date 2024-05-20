@@ -1,0 +1,32 @@
+.form {
+	align-items: start;
+	justify-content: space-evenly;
+	max-width: 400px;
+	max-height: 100vh;
+	margin: 1em 0;
+	overflow: scroll;
+}
+.buttons {
+	min-width: 100%;
+	button {
+		margin: 0 auto;
+	}
+}
+.form_container {
+	max-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+.img_container {
+	display: none;
+}
+@media (min-width: 996px) {
+	.form_container {
+		grid-area: 1 / 1 / 4 / 3;
+	}
+	.img_container {
+		display: block;
+		margin-left: 2em;
+	}
+}
